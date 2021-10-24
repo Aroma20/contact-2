@@ -1,0 +1,913 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<title>:
+		الصفحة الرئيسية	</title>
+            <meta name="description" content="" />
+                <meta name="keywords" content="" />
+    
+         <link rel="stylesheet" href="base.css " />
+         <link rel="stylesheet" href="global_rtl.css " />
+
+<![CDATA[
+$(function(){
+    $('#weatherMoreBtn').click(function(){
+        $('#weatherMoreWrap').slideToggle('slow');
+    });
+    $('#siteSwitch').click(function(){
+        $('#siteSwitchContainer').slideToggle('quick');
+    });
+    $('#custom_bar_txt').click(function(){
+        $('#custom_list').slideToggle('quick');
+    });
+    $('#selectWeatherCity').click(function(){
+        $('#weatherCityLayer').slideToggle('quick');
+    });
+    $('#add-btn').click(function(){
+        $('#customsite-con').slideToggle('quick');
+    });
+    $('#del-btn-cancel').click(function(){
+        $('#customsite-con').hide(1000);
+    });
+    $('#addFavClose').click(function(){
+        $('#addFavBar').hide(1000);
+    });
+    $('.btn modify sprite-modify_normal').mousemove(function(){
+        $(this).addClass('sprite-modify_hover');
+    });
+    $('.btn del sprite-del_normal').mousemove(function(){
+        $(this).addClass('sprite-del_hover');
+    });
+    $('.btn modify sprite-modify_normal').mouseout(function(){
+        $(this).removeClass('sprite-modify_hover');
+    });
+    $('.btn del sprite-del_normal').mouseout(function(){
+        $(this).removeClass('sprite-del_hover');
+    });
+    $('#addFav').mousemove(function(){
+        $(this).css('width','162');
+        $('#setHome').css('width','9');
+    });
+    $('#setHome').mousemove(function(){
+        $(this).css('width','138');
+        $('#addFav').css('width','9');
+    });
+});
+//]]>
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ar_AR/all.js#xfbml=1&appId=212144122270615";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+	<div id="addFavBar" class="bar-addfav" style="display: block;">
+<div class="bar-addfav_inner l-wrap"><i class="bar-addfav_icon icon-sethome"></i><span class="bar-addfav_title">عزيزي المستخدم </span>
+<span class="bar-addfav_text">لجعل تصفح الانترنت أسهل وأكثر أمانا ، اجعل Aroma .. الانترنت في صفحة واحدة صفحتك الرئيسية !</span><a hidefocus="true" data-val="close" data-sort="topbar" id="addFavClose" class="bar-addfav_close" target="_self" href="javascript:void(0)"></a></div></div><div id="top" class="userbar-wrap">
+	<div class="userbar l-wrap">
+		<div class="userbar-logo fr">
+			<a id="indexLogo" href="">
+                <img src="logozooozaaa3.png" title="" alt="" id="indexLogoImg" />			</a>
+			<span class="userbar-logo_slogan">دليل المواقع السهولة والامان  </span>
+			<div class="userbar-logo_tip" id="welcomeTip">
+				<div class="arrow">
+					<div class="arrow_bg"></div>
+				</div>
+				<p> <a onclick="return false" id="tipLink" href="#"></a></p>
+			</div>
+		</div>
+		<div id="siteSwitch" class="site-switch fr" style="display: block;"><a target="_self" href="javascript:void(0)" class="site_ar" hidefocus="true"><i style="background-repeat: no-repeat; background-image:url(icon_country_51f387dd5280b.png);"></i>مصر</a>
+			<div id="siteSwitchContainer" class="site-switch_container" style="display: none;">
+				<div class="site-switch_content">
+					<ul>
+                    						<li class="site_br">
+							<a target="_self" href="/syria">
+                            <i style="background-image: url(icon_country_519ebf70c3530.png); background-repeat: no-repeat;"></i>
+                            سورية                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Saudi">
+                            <i style="background-image: url(51f2958c66484.png); background-repeat: no-repeat;"></i>
+                            السعودية                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Morocco">
+                            <i style="background-image: url(51f294e527857.png); background-repeat: no-repeat;"></i>
+                            المغرب                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Algeria">
+                            <i style="background-image: url(51f17e892c679.png); background-repeat: no-repeat;"></i>
+                            الجزائر                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Sudan">
+                            <i style="background-image: url(51f29513d9066.png); background-repeat: no-repeat;"></i>
+                            السودان                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Libya">
+                            <i style="background-image: url(51f2960d83d0f.png); background-repeat: no-repeat;"></i>
+                            ليبيا                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Tunisia">
+                            <i style="background-image: url(51f2a8a15f750.png); background-repeat: no-repeat;"></i>
+                            تونس                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Yemen">
+                            <i style="background-image: url(country_51f2ad0dc9670.png); background-repeat: no-repeat;"></i>
+                            اليمن                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Kuwait">
+                            <i style="background-image: url(51f2ad502132d.png); background-repeat: no-repeat;"></i>
+                            الكويت                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Oman">
+                            <i style="background-image: url(51f2bd7eec4f3.png); background-repeat: no-repeat;"></i>
+                            عمان                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Egypt">
+                            <i style="background-image: url(51f387dd5280b.png); background-repeat: no-repeat;"></i>
+                            مصر                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Lebanon">
+                            <i style="background-image: url(51f4f536c38a0.png); background-repeat: no-repeat;"></i>
+                            لبنان                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Iraq">
+                            <i style="background-image: url(51f4f5cb147db.png); background-repeat: no-repeat;"></i>
+                            العراق                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Jordan">
+                            <i style="background-image: url(51f4f664a9e45.png); background-repeat: no-repeat;"></i>
+                            الاردن                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Emirates">
+                            <i style="background-image: url(51f4f792a11eb.png); background-repeat: no-repeat;"></i>
+                            الامارات                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Qatar">
+                            <i style="background-image: url(51f4f7b287781.png); background-repeat: no-repeat;"></i>
+                            قطر                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Bahrain">
+                            <i style="background-image: url(51f4f7dc92514.png); background-repeat: no-repeat;"></i>
+                            البحرين                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Palestinian">
+                            <i style="background-image: url(51f4f90178d69.png); background-repeat: no-repeat;"></i>
+                            فلسطين                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Somalia">
+                            <i style="background-image: url(5f32770422294.png); background-repeat: no-repeat;"></i>
+                            الصومال                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Djibouti">
+                            <i style="background-image: url(5f32c7b388ba6.png); background-repeat: no-repeat;"></i>
+                            جيبوتي                            </a>
+						</li>
+                    						<li class="site_br">
+							<a target="_self" href="/Eritrea">
+                            <i style="background-image: url(5f32c779f3901.png); background-repeat: no-repeat;"></i>
+                            اريتريا                            </a>
+						</li>
+                    					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="userbar-tool fl">
+			
+			<div class="userbar-btn">
+				<a id="addFav" href="javascript:window.external.AddFavorite('http://www.waslat.com/',%20'(((وصلات .. الانترنت في صفحة واحدة)))')">	
+					<i class="userbar-addfav"></i>				
+					<span>أضف Aroma إلىBookmarks</span>
+				</a>
+				<a id="setHome" href="#" style="width: auto;">
+					<i class="userbar-sethome"></i>
+					<span>اجعلنا صفحتك الرئيسية </span>
+				</a>
+			</div>
+		</div>
+		<div class="userbar-weather fl">
+	<ul class="fl" id="weatherView">
+        
+    </ul>
+	<div class="userbar-weather_console">
+		<div class="userbar-weather_city">
+			<div class="userbar-weather_city-cur"><a title="اختيار واحدة من المدن" href="#" onclick="return false;" id="selectWeatherCity">القاهرة</a></div>
+			<div style="display:none" class="box box-prompt city-select" id="weatherCityLayer">
+				<div class="box-prompt-inner">
+                <form action="/daleel/daleel_categories/changeWeather" id="WeatherIndexForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>					<p><label>المدينة</label>
+                    <select name="data[Weather][City]" id="weatherCity_city">
+<option value=""></option>
+<option value="109">القاهرة</option>
+<option value="110">الغردقة</option>
+</select>                    
+                    </p>
+					<p class="btn-bar">
+						<input class="mod-btn_normal" type="submit" id="weatherCity_save" value="تأكيد"/>
+					</p>
+                    </form>				</div>
+			</div>
+		</div>
+		<a onclick="return false;" hidefocus="true" class="weather-days" id="weatherMoreBtn" href="#">
+			<p>كل ما تريده ستجده هنا</p>
+		</a>
+	</div>
+</div>	</div>
+</div><div class="weather-more_wrap weather-more_show" id="weatherMoreWrap" style="display: none;">
+	<div class="weather-more_line">
+		<ul class="weather-more l-wrap" id="weatherMore">
+                </ul>
+	</div>
+</div><div class="l-wrap">	
+	<dl monkey="search" class="box-search">
+	<dt class="box-search_tab cf" id="searchGroupTabs" style="-moz-user-select: none;">			
+	           <a onclick="return false" href="#" class="cur" id="data-t_web" >ويب</a>
+																				<s class="box-search_sep"></s>
+				<a onclick="return false" href="#" id="data-t_video">فيديو</a>
+																				<s class="box-search_sep"></s>
+				<a onclick="return false" href="#" id="data-t_images">صور</a>
+																				<s class="box-search_sep"></s>
+				<a onclick="return false" href="#" id="data-t_map">خرائط</a>
+																				<s class="box-search_sep"></s>
+				<a onclick="return false" href="#" id="data-t_wiki">ويكيبيديا</a>
+																				<s class="box-search_sep"></s>
+				<a onclick="return false" href="#" id="data-t_translate">ترجمة </a>
+										</dt>
+	<dd class="box-search_wrap">
+		<div class="box-search_inner cf">
+			<div class="box-search_logo_wrap">
+				<dl id="searchGroupLogos" class="box-search_logo fr box-search_logo_disabled">
+					<dt class="">
+						<a data-n="0" hidefocus="true" onclick="return false" href="#">
+                            <img src="google.png" id="searchGroupLogo" alt="google" />	                	</a>
+                	</dt>
+				</dl>
+			</div>
+			<div class="box-search_form">
+				<form action="http://www.google.com/search?" id="searchGroupForm" accept-charset="utf-8" target="_blank">
+					<span class="o input fr">
+						<label id="searchGroupLabel" for="searchGroupInput" style="display: block;"></label>
+						<input type="text" id="searchGroupInput" name="q" autocomplete="off"/>
+                        <img src="tia.png" width="25" height="25" alt="" id="searchKeyboard" class="box-search_keyboard" />					<div class="sug-search" style="display: none;"></div></span>
+					<div class="ibw btn-search cf">
+						<span class="btn-search_l"></span>
+						<button type="submit" id="searchGroupBtn" hidefocus="true" class="ib btn-search_c"><i class="btn-search_ico"></i></button>
+						<span class="btn-search_r"></span>
+					</div>
+					<span style="display:none" id="searchGroupParams">
+																					<input type="hidden" value="ar" name="hl">
+																		</span>
+				</form>
+			</div>
+		</div>
+	</dd>
+</dl>
+	</div><div class="l-wrap">
+	<div  class="hotsite_wrap">
+	        <div id="hotsite" class="hotsite">
+                                     <span class="">
+	                        <a target="_blank" href="http://www.facebook.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f3893c333d8.png" width="48" height="48" alt="" /></i>
+	                            فايسبوك                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://youm7.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src ="icon_site_51f3895808c54.png" width="48" height="48" alt="" /></i>
+	                            اليوم السابع                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://fatakat.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38982412b7.png" width="48" height="48" alt="" /></i>
+	                            فتكات                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://akhbarak.net" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f389bc96dd9.png" width="48" height="48" alt="" /></i>
+	                            اخبارك                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://youtube.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f389e5e3c0d.png" width="48" height="48" alt="" /></i>
+	                            يوتيوب                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://www.yahoo.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38a1f032ac.png" width="48" height="48" alt="" /></i>
+	                            ياهو                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://google.com.eg" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38a543a905.png" width="48" height="48" alt="" /></i>
+	                            غوغل مصر                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="https://twitter.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38a7df12ec.png" width="48" height="48" alt="" /></i>
+	                            تويتر                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://www.light-dark.net/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38b0889335.png" width="48" height="48" alt="" /></i>
+	                            النور والظلمة                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://www.christian-dogma.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38b6ab4a37.png" width="48" height="48" alt="" /></i>
+	                            الحق والضلال                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://www.almasryalyoum.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38bb6e3ff5.png" width="48" height="48" alt="" /></i>
+	                            المصري اليوم                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://masrawy.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38cc315b2f.png" width="48" height="48" alt="" /></i>
+	                            مصراوي                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://myegy.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f38d114d613.png" width="48" height="48" alt="" /></i>
+	                            ماي ايجي                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://ahram.org.eg/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f390f893741.png" width="48" height="48" alt="" /></i>
+	                            الاهرام                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://elwatannews.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f39188d59ad.png" width="48" height="48" alt="" /></i>
+	                            الوطن                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://elfagr.org" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f3950d52fd7.png" width="48" height="48" alt="" /></i>
+	                            الفجر                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://yallakora.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f3963cad10d.png" width="48" height="48" alt="" /></i>
+	                            يللاكوره                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://dubizzle.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f3968633021.png" width="48" height="48" alt="" /></i>
+	                            دبيزيل                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://el-balad.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f396e252b53.png" width="48" height="48" alt="" /></i>
+	                            صدى البلد                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://nmisr.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f39803ba7e6.png" width="48" height="48" alt="" /></i>
+	                            نجوم مصرية                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://shorouknews.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f398964ce73.png" width="48" height="48" alt="" /></i>
+	                            الشروق                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://mazika2day.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f39909da418.png" width="48" height="48" alt="" /></i>
+	                            مزيكا تو داي                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://almesryoon.com/" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f399c9de697.png" width="48" height="48" alt="" /></i>
+	                            المصريون                            </a>
+		             </span>
+                                     <span class="">
+	                        <a target="_blank" href="http://www.arabseed.com" class="hotsite_link">
+						        <i class="i-hot-sprites i-ar-facebook"><img src="icon_site_51f39a6963993.png" width="48" height="48" alt="" /></i>
+	                            عرب سيد                            </a>
+		             </span>
+                            </div>
+	        <div class="hotsite-custom">
+	          
+  <a onclick="return false;" tabindex="-1" hidefocus="true" href="javascript:void(0)" id="custom_bar" class="hotsite-custom_bar">
+	            	<span class="sprite-fold sprite-unfold"></span>
+	            	<span id="custom_bar_txt">إضافة أي مواقع مفضلة لديك  </span>
+	            </a>
+
+	            <div id="custom_list" class="hotsite-custom_list cf" style="display: block;">
+                <img src="/img/indicator.gif" id="busy-indicator" style="display:none" alt="" />                <div id="custom_list_25">
+                                    </div>
+
+             
+                 <div id="custom_list" class="default_login" style="display: block;">
+                                                <form accept-charset="utf-8" method="post" id="UserIndex_default" action="/users/login">
+                            <div class="input text required">
+                                <label for="UserUsername" class="label_default">اسم المستخدم</label>
+                                <input type="text" id="UserUsername" class="input_default" maxlength="60" name="data[User][username]"/>
+                            </div>
+                            <div class="input password required">
+                                <label for="UserPassword" class="label_default">كلمة المرور</label>
+                                <input type="password" id="UserPassword" class="input_default" name="data[User][password]"/>
+                            </div>
+                        
+                        <input type="submit" style="margin-top: 5px;width: 200px;" class="mod-btn_normal ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" value="سجل دخولك لأضافة مواقعك المفضلة"/>
+                        </form>
+                        
+                       	<span id="add-btn" class="custom_item add-btn" style="display: inline;width: 330px;">
+	                 		<i class="add-btn-ico"></i>
+	                 		<span class="add-btn-txt"><a href="#" style="color:#909191">إذا لم يكن لديك حساب انشئ حسابا جديدا ببساطة</a></span>
+		                </span>                      
+<span id="add-btn" class="custom_item add-btn" style="display: inline;width: 330px;">
+	                 		<i class="add-btn-ico"></i>
+	                 		<span class="add-btn-txt"><a class="spcl-button facebook badge-facebook-connect" label="LoginFormFacebookButton" next="" href="#">سجل عن طريق حسابك في الفيس بوك</a></span>
+		                </span>
+	           </div>
+                        
+                  	           </div>
+
+	        </div>
+	</div>
+</div>    <div class="l-wrap s-mbm">
+		<div class="l-g cf">
+          
+            <div class="l-g3-4">
+                <div style="width:960px ;margin:0 auto ;">
+<script type="text/javascript"><!--
+
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>    
+          <br>                  
+	<div class="l-g3-4">
+    <div  class="box-sort">
+             <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>مال واعمال</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://egypt.lelarab.com">
+                            سوق للعرب                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>تربية وتعليم</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://www.ejust.edu.eg/">
+                الجامعة المصرية اليابانية                         </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.o6u.edu.eg/">
+                             جامعة 6 اكتوبر                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.aun.edu.eg/">
+                             جامعة أسيوط                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.bsu.edu.eg/">
+                             جامعة بني سويف                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.nileu.edu.eg/">
+                             جامعة النيل                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.su.edu.eg/">
+                             جامعة سيناء                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>مواقع دينية</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://islamway.com/">
+                            طريق الفوائد                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://islammemo.cc/">
+                            مفكرة الاسلام                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://islamweb.net">
+                            اسلام ويب                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.tvquran.com/">
+                            tvquran                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.quranflash.com/">
+                            تصفح القرآن                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.islamtoday.net/">
+                            الاسلام اليوم                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>صحافة و إعلام</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://www.ap.org/">
+                            اسوشيتد برس<i class="icon-new"></i>                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.sana.sy">
+                            وكالة الأنباء السورية                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.aljazeera.net/">
+                            الجزيرة<i class="icon-new"></i>                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.middle-east-online.com">
+                            ميدل ايست اونلاين<i class="icon-new"></i>                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.wna-news.com">
+                            وكالة الانباء العراقية                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.aps.dz/">
+                            وكالة الأنباء الجزائرية<i class="icon-new"></i>                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>ترفيه وألعاب</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://ikariam.com">
+                            ikariam                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://cultures.gamepower7.com/">
+                            حضارات منسية                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://gamezer.com">
+                            gamezer                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://justin.tv">
+                            justin.tv                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://metacafe.com/">
+                            ميتا كافيه                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.youtube.com/">
+                            يوتيوب                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>البريد الالكتروني</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://www.mail.ru">
+                            mail.ru                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="https://www.aol.com">
+                            Aol mail                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.gmail.com">
+                            جي ميل                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://mail.yahoo.com/">
+                            ياهو ميل                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.mail.com">
+                            mail                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.hotmail.com">
+                            هوتميل                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>هيئات ومنظمات</a>
+        		</dt>
+                 			    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>التحميل</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://www.sendspace.com/">
+                            sendspace                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.ziddu.com/">
+                            ziddu                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://filerio.in/">
+                            filerio                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.sm3na.com/">
+                            سمعنا                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://download.cnet.com/windows/">
+                            cnet                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://tinypic.com/">
+                            tinypic                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i> المواقع الحكومية</a>
+        		</dt>
+                 			    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>عالم المرآة</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://www.xro7x.net/vb/index.php">
+                            منتديات شيفون                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://bo7.net/">
+                            فراشة حواء                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://mn66.com/">
+                            عالم المرآة                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://hawaaworld.com/">
+                            عالم حواء                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.achekayn.com/">
+                            أشكون مولاتي                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.supermama.me/">
+                            سوبر ماما                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>التواصل الاجتماعي</a>
+        		</dt>
+                             		<dd>
+                        <a target="_blank" href="http://www.shehra-zad.com/vb/index.php">
+                            شهرزاد تركيا                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://noormedia.net/">
+                            شبكة نور للاعلام                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="https://twitter.com/">
+                            تويتر                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.tagged.com">
+                            تاجيد                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://badoo.com">
+                            بادو                        </a>  
+        			</dd>			    			
+            	            		<dd>
+                        <a target="_blank" href="http://www.linkedin.com/">
+                            لينكيد اين                        </a>  
+        			</dd>			    			
+            				    			
+             </dl>
+        </div> 
+            <div class="l-g1-4">
+        	<dl class="s-mlm s-mtm s-pbs sortsite special">	    			
+        		<dt class="s-mbs">
+        			<a href="#" target="_blank"><i class="arrow_r"></i>تكنولوجيا و إنترنت</a>
+        		</dt>
+                 			    			
+             </dl>
+        </div> 
+   </div>	
+</div>            </div>
+            <div class="l-g0">
+                <div class="l-g0">
+  
+		<br>
+        <div class="s-mtm mod-mail box-border">
+        <dl class="mod-side cf">
+        <dt> سعر الدولار اليوم<div class="bot_line"></div></dt>
+        <iframe src="http://www.syria-stocks.com/dollarrange/getState4.php" style="float:right;width:210px ;height:68px ;" scrolling="no" ></iframe>
+        </dl>         
+     	</div>
+    <div class="s-mtm mod-mail box-border" style="clear: both;">
+		<dl class="mod-side cf">
+        <dt> البريد الالكتروني<div class="bot_line"></div></dt>
+        	<dd><a target="_blank" href="https://login.yahoo.com/config/login_verify2?&amp;.src=ym" class="mail-item mail-2">Yahoo!Mail</a></dd>	
+        	<dd><a target="_blank" href="http://mail.google.com/" class="mail-item mail-1">Gmail</a></dd>	
+        	<dd><a target="_blank" href="http://mail.live.com/" class="mail-item mail-3">Hotmail</a></dd>	
+        	<dd><a target="_blank" href="http://www.mail.com/int/" class="mail-item mail-4">mail</a></dd>	
+        </dl>        
+	</div>			
+	<div  class="s-mtm mod-useful box-border">
+		<dl class="mod-side cf">
+			<dt>التصنيفات الساخنة<div class="bot_line"></div></dt>
+                            <dd><a href="http://www.hu.edu.eg/" target="_blank"> جامعة هليوبوليس<i class="icon-hot"></i></a></dd>
+                <dd><a href="http://www.pua.edu.eg/" target="_blank"> جامعة فاروس بالإسكندرية<i class="icon-hot"></i></a></dd>
+                        				<dd><a target="_blank" href="#">تربية وتعليم<i class="icon-hot"></i></a></dd>
+            				<dd><a target="_blank" href="#">عالم المرآة<i class="icon-hot"></i></a></dd>
+             
+            				<dd><a href="http://cu.edu.eg" target="_blank">جامعة القاهرة <i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://www.alexu.edu.eg" target="_blank">جامعة الاسكندرية<i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://www.aswu.edu.eg/" target="_blank"> جامعة أسوان<i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://www.minia.edu.eg" target="_blank"> جامعة المنيا<i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://www.psu.edu.eg/" target="_blank"> جامعة بور سعيد<i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://www.damanhour.edu.eg" target="_blank"> جامعة دمنهور<i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://www.bue.edu.eg/" target="_blank"> الجامعة البريطانية<i class="icon-hot"></i></a></dd>
+            				<dd><a href="http://scuegypt.edu.eg" target="_blank"> جامعة قناة السويس<i class="icon-hot"></i></a></dd>
+               				
+		</dl> 		
+	</div>
+</div>            </div>
+        </div>
+    </div>
+    <div class="l-wrap s-mbm">
+	<div  class="box-bot box-border">
+            				<ul class="cf">
+        				<li class="m"><a target="_blank" href="#">المزيد<i>›</i></a></li>
+        				<li class="t"><a target="_blank" href="#">البرامج الأكثر استخداما</a></li>
+                                				    <li>	
+                            <a href="http://www.win-rar.com/download.html?&amp;L=0" target="_blank">WinRar</a>                            </li>
+                               				    <li>	
+                            <a href="http://www.videozip.org/download.html" target="_blank">videozip</a>                            </li>
+                               				    <li>	
+                            <a href="http://soft.sptechs.com/14705-Internet-Download-Manager-511.html" target="_blank">Internet Download Manager</a>                            </li>
+                               				    <li>	
+                            <a href="http://www.filehippo.com/download_adobe_reader/" target="_blank">Adobe Reader</a>                            </li>
+                               				    <li>	
+                            <a href="http://www.divshare.com/download/1589970-5a1" target="_blank">LimeWire</a>                            </li>
+                               				    <li>	
+                            <a href="http://www.bsplayer.com/bsplayer-english/download-free.html" target="_blank">bsplayer</a>                            </li>
+                               				    <li>	
+                            <a href="http://download.cnet.com/1770-20_4-0.html?query=Norton+AntiVirus&amp;tag=pfindersrch&amp;searchtype=downloads&amp;filterName=platform%3DWindows&amp;filter=platform%3DWindows&amp;platformSelectDL=Windows&amp;priceFilterDL=All&amp;category=All" target="_blank">Norton AntiVirus</a>                            </li>
+                               				    <li>	
+                            <a href="http://www.zonealarm.com/security/en-us/anti-virus-spyware-free-download.htm" target="_blank">zonealarm</a>                            </li>
+                         					
+                   </ul>
+            				<ul class="cf">
+        				<li class="m"><a target="_blank" href= "#">المزيد<i>›</i></a></li>
+        				<li class="t"><a target="_blank" href="#">الاستعلامات اليومية</a></li>
+                          					
+                   </ul>
+                   
+	</div>
+</div>    <div class="l-wrap t-c">
+	<ul class="box-fot no-hover">
+            <li><a href="#">عن وصلات</a><b class="space"></b></li>
+            <li><a href="#">الأقتراحات</a><b class="space"></b></li>
+            <li><a href="#">إخلاء المسؤولية - هام</a><b class="space"></b></li>
+        </ul>
+<br>
+    كل المعلومات المقدمة في موقع Aroma من روابط مواقع ، صور ، فيديو ، لوجوهات ، وأيقونات الخ ،
+ بانها ملكاً للغير ولا تنتمى بأي شكل من الأشكال لملكية الشركة المصريه لخدمات الانترنت وموقع Aroma بإستثناء لوجو وأيقون Aroma.
+<br>
+<br>
+<br>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+    $('#data-t_web').click(function(){
+        $(this).addClass('cur');
+        $('#data-t_video').removeClass('cur');
+        $('#data-t_images').removeClass('cur');
+        $('#data-t_map').removeClass('cur');
+        $('#data-t_wiki').removeClass('cur');
+        $('#data-t_translate').removeClass('cur');
+        $('#searchGroupForm').attr('action','http://www.google.com/search?');
+        $('#searchGroupLogo').attr('src',"/Daleel/img/search_logo/google.png");
+    });
+    $('#data-t_video').click(function(){
+        $(this).addClass('cur');
+        $('#data-t_web').removeClass('cur');
+        $('#data-t_images').removeClass('cur');
+        $('#data-t_map').removeClass('cur');
+        $('#data-t_wiki').removeClass('cur');
+        $('#data-t_translate').removeClass('cur');
+        $('#searchGroupForm').attr('action','http://www.youtube.com/results');
+        $('#searchGroupLogo').attr('src',"/Daleel/img/search_logo/youtube.png");
+    });
+    $('#data-t_images').click(function(){
+        $(this).addClass('cur');
+        $('#data-t_web').removeClass('cur');
+        $('#data-t_video').removeClass('cur');
+        $('#data-t_map').removeClass('cur');
+        $('#data-t_wiki').removeClass('cur');
+        $('#data-t_translate').removeClass('cur');
+        $('#searchGroupForm').attr('action','http://images.search.yahoo.com/search/images?');
+        $('#searchGroupLogo').attr('src',"/Daleel/img/search_logo/yahoo.png");
+    });
+    $('#data-t_map').click(function(){
+        $(this).addClass('cur');
+        $('#data-t_web').removeClass('cur');
+        $('#data-t_video').removeClass('cur');
+        $('#data-t_images').removeClass('cur');
+        $('#data-t_wiki').removeClass('cur');
+        $('#data-t_translate').removeClass('cur');
+        $('#searchGroupForm').attr('action','http://maps.google.com/maps');
+        $('#searchGroupLogo').attr('src',"/Daleel/img/search_logo/google.png");
+    });
+    $('#data-t_wiki').click(function(){
+        $(this).addClass('cur');
+        $('#data-t_web').removeClass('cur');
+        $('#data-t_images').removeClass('cur');
+        $('#data-t_map').removeClass('cur');
+        $('#data-t_video').removeClass('cur');
+        $('#data-t_translate').removeClass('cur');
+        $('#searchGroupForm').attr('action','http://ar.wikipedia.org/w/index.php');
+        $('#searchGroupLogo').attr('src',"/Daleel/img/search_logo/wiki_ar.png");
+    });
+    $('#data-t_translate').click(function(){
+        $(this).addClass('cur');
+        $('#data-t_web').removeClass('cur');
+        $('#data-t_images').removeClass('cur');
+        $('#data-t_map').removeClass('cur');
+        $('#data-t_wiki').removeClass('cur');
+        $('#data-t_video').removeClass('cur');
+        $('#searchGroupForm').attr('action','http://translate.google.com/#en/ar/');
+        $('#searchGroupLogo').attr('src',"/Daleel/img/search_logo/google_translate.png");
+    });
+});
+//]]>
+</script>    <script type="text/javascript">
+//<![CDATA[
+$(document).ready(function () {$("#del-btn-ok").bind("click", function (event) {$.ajax({async:true, data:$("#del-btn-ok").closest("form").serialize(), dataType:"html", success:function (data, textStatus) {$("#custom_list_25").html(data);}, type:"post", url:"\/daleel\/daleel_user_links\/add"});
+return false;});});
+//]]>
+</script></body>
+</html>
